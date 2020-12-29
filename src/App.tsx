@@ -1,25 +1,16 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import Button,{ButtonSize,ButtonType} from './components/Button/button'
 
+import './styles/index.scss'
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+        <Button > hello </Button>
+        <Button size={ButtonSize.Large}> hello </Button>
+        <Button size={ButtonSize.Small} btnType={ButtonType.Danger} > hello </Button>
+        <Button btnType={ButtonType.Link} href="https://www.baidu.com" target="_dlank"> hello </Button>
+  
+    </>
   );
 }
 
